@@ -20,7 +20,7 @@ const App = () => {
     <div>
       <Routes>
         <Route element={<ScrollTop />}>
-          <Route path="/Home" element={<Home />}/>
+          <Route path="/" element={<Home />}/>
           <Route path="/AboutMe" element={<AboutMe />}/>
         </Route>
       </Routes>
