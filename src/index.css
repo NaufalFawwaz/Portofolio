@@ -18,10 +18,31 @@ html {
   left: 0;
   height: 2px;
   width: 0;
-  background-color: #000; 
+  background-color: #445964; 
   transition: width 0.3s;
 }
 
 a:hover .line {
   width: 100%;
+}
+
+.icon-link {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+}
+
+.github:hover {
+  color: #24292e;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.instagram:hover {
+  color: #E4405F;
 }
