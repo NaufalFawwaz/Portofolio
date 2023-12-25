@@ -9,7 +9,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #eeeeee;
+  background-color: #FBFBFB;
 }
 
 .line {
@@ -45,4 +45,28 @@ a:hover .line {
 
 .instagram:hover {
   color: #E4405F;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #445964;
+  border-radius: 5px;
+}
+
+* {
+  scrollbar-color: #445964 #FBFBFB;
+  scrollbar-width: thin;
+}
+
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #FBFBFB;
 }

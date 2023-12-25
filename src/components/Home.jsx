@@ -13,7 +13,7 @@ const Home = () => {
         window.open(driveLink, '_blank');
     };
     return (
-        <main className="max-w-7xl mx-auto">
+        <main id='home' className="max-w-7xl mx-auto">
             <section className='md:h-[85vh] md:max-h-[500px] mt-16 flex flex-row items-center justify-between w-full'>
                 <div className='text-main font-medium flex flex-col gap-y-2 h-full pt-3'>
                     <div className='pt-6'>
@@ -28,7 +28,7 @@ const Home = () => {
                             repeat={Infinity}
                             className='text-4xl font-bold text-main'
                         />
-                        <p className='pb-3 text-3xl'>Welcome to my portfolio website</p>
+                        <p className='pb-3 text-3xl'>Welcome to my portofolio website</p>
                     </div>
                     <button onClick={theButtonClick} className='bg-gray-800 rounded-[12px] p-3 text-white font-black w-fit mt-9 hover:bg-black hover:text-eeeeee hover:scale-110'>Find Out More About Me</button>
                     <div className='flex flex-row gap-7 pt-16'>
@@ -47,12 +47,7 @@ const Home = () => {
                     <img src={art} alt="" className='max-w-80'/>
                 </div>
             </section>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <AboutMe />
+                <AboutMe/>
         </main>
     )
 }
