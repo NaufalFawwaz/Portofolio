@@ -3,70 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: 'Poppins';
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: #FBFBFB;
 }
 
-.line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 0;
-  background-color: #445964; 
-  transition: width 0.3s;
+.bg-white {
+  background-color: #ffffff;
 }
 
-a:hover .line {
-  width: 100%;
-}
-
-.icon-link {
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.icon-link:hover {
-  transform: scale(1.2);
-}
-
-.github:hover {
-  color: #24292e;
-}
-
-.linkedin:hover {
-  color: #0077b5;
-}
-
-.instagram:hover {
-  color: #E4405F;
-}
-
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #445964;
-  border-radius: 5px;
-}
-
-* {
-  scrollbar-color: #445964 #FBFBFB;
-  scrollbar-width: thin;
-}
-
-
-* {
-  -ms-overflow-style: none;
-  scrollbar-width: thin;
-}
-
-*::-webkit-scrollbar-track {
-  background-color: #FBFBFB;
+.dark .dark\:bg-gray-900 {
+  background-color: #111827;
 }
