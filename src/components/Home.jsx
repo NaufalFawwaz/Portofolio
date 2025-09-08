@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { useDarkMode } from '../context/DarkModeContext';
+import { Helmet } from 'react-helmet';
 import art from '../assets/art.png';
 import { FaGithub, FaLinkedinIn, FaInstagram, FaFileDownload } from "react-icons/fa";
 import AboutMe from './AboutMe';
@@ -91,6 +92,54 @@ const Home = () => {
                 ? 'bg-gray-800'
                 : 'bg-gradient-to-br from-gray-100 to-white'
             }`}>
+            
+            <Helmet>
+                <title>M. Naufal Fawwaz Haryono - Front-End Developer Portfolio</title>
+                <meta name="description" content="Portfolio of M. Naufal Fawwaz Haryono, a passionate Front-End Developer specializing in React, JavaScript, and modern web development." />
+                <meta name="keywords" content="Front-End Developer, React Developer, JavaScript, Web Development, Portfolio, Naufal Fawwaz" />
+                <meta name="author" content="M. Naufal Fawwaz Haryono" />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://naufalfawwaz.vercel.app/" />
+                <meta property="og:title" content="M. Naufal Fawwaz Haryono - Front-End Developer" />
+                <meta property="og:description" content="Portfolio of M. Naufal Fawwaz Haryono, a passionate Front-End Developer specializing in React, JavaScript, and modern web development." />
+                <meta property="og:image" content="https://naufalfawwaz.vercel.app/my.png" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:image:alt" content="M. Naufal Fawwaz Haryono - Front-End Developer" />
+
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://naufalfawwaz.vercel.app/" />
+                <meta property="twitter:title" content="M. Naufal Fawwaz Haryono - Front-End Developer" />
+                <meta property="twitter:description" content="Portfolio of M. Naufal Fawwaz Haryono, a passionate Front-End Developer specializing in React, JavaScript, and modern web development." />
+                <meta property="twitter:image" content="https://naufalfawwaz.vercel.app/my.png" />
+                <meta property="twitter:image:alt" content="M. Naufal Fawwaz Haryono - Front-End Developer" />
+
+                <link rel="canonical" href="https://naufalfawwaz.vercel.app/" />
+
+                <script type="application/ld+json">
+                    {`
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "Person",
+                      "name": "M. Naufal Fawwaz Haryono",
+                      "url": "https://naufalfawwaz.vercel.app/",
+                      "image": "https://naufalfawwaz.vercel.app/my.png",
+                      "sameAs": [
+                        "https://github.com/NaufalFawwaz",
+                        "https://www.linkedin.com/in/m-naufal-fawwaz-haryono-1a09a9291/",
+                        "https://www.instagram.com/naufal2738/"
+                      ],
+                      "jobTitle": "Front-End Developer",
+                      "worksFor": {
+                        "@type": "Organization",
+                        "name": "Freelance"
+                      },
+                      "description": "Passionate Front-End Developer specializing in React, JavaScript, and modern web development."
+                    }
+                    `}
+                </script>
+            </Helmet>
 
             <section className='min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between w-full px-4 sm:px-6 lg:px-8 py-8 lg:py-16 gap-8 lg:gap-16 mx-auto max-w-7xl'>
 
@@ -108,17 +157,17 @@ const Home = () => {
                     </p>
 
                     <div className='h-20 md:h-24 flex items-center justify-center lg:justify-start mb-5'>
-                        <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold ${isDarkMode ? 'text-white' : 'text-main'
+                        <h1 className={`text-2xl md:text-3xl lg:text-4xl font-bold ${isDarkMode ? 'text-white' : 'text-main'
                             }`}>
                             {animatedText}
                             <span className="animate-pulse">|</span>
-                        </h2>
+                        </h1>
                     </div>
 
-                    <h3 className={`text-lg md:text-xl font-medium mb-6 ${isDarkMode ? 'text-gray-300' : 'text-main'
+                    <h2 className={`text-lg md:text-xl font-medium mb-6 ${isDarkMode ? 'text-gray-300' : 'text-main'
                         }`}>
                         Welcome to my space
-                    </h3>
+                    </h2>
 
                     <p className={`text-base md:text-lg leading-relaxed mb-8 ${isDarkMode ? 'text-gray-300' : 'text-main'
                         }`}>
@@ -206,7 +255,7 @@ const Home = () => {
 
                     <motion.img
                         src={art}
-                        alt="Illustration"
+                        alt="M. Naufal Fawwaz Haryono - Front-End Developer"
                         className='relative w-64 md:w-72 lg:w-80 z-10 rounded-xl'
                         style={{
                             filter: isDarkMode
