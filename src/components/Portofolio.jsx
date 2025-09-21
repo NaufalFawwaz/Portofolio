@@ -5,6 +5,7 @@ import { useDarkMode } from '../context/DarkModeContext';
 import FilkomGameCorner from '../assets/FilkomGameCorner.png';
 import YourPhoto from '../assets/YourPhoto.png';
 import QrOnceScanner from '../assets/QrOnceScanner.png';
+import MyManga from '../assets/MyManga.jpg';
 
 const projectsData = [
   {
@@ -25,6 +26,14 @@ const projectsData = [
   },
   {
     id: 3,
+    title: "MyManga",
+    description: "Website baca manga fetching dari API MangaDex",
+    image: MyManga,
+    technologies: ["Next.js", "Tailwind CSS"],
+    link: "https://github.com/NaufalFawwaz/MyMangaa"
+  },
+  {
+    id: 4,
     title: "QR Once Scanner",
     description: "Aplikasi scanner QR code untuk presensi dengan validasi sekali pakai dan dapat export ke excel.",
     image: QrOnceScanner,

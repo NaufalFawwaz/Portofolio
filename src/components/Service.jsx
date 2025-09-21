@@ -154,7 +154,7 @@ const Service = () => {
   };
 
   return (
-    <section id="contact" className={`pt-32 pb-20 px-4 sm:px-6 lg:px-8 -mt-24 ${isDarkMode ? 'bg-gray-800' : 'bg-gray-100'
+    <section id="contact" className={`pt-32 pb-20 px-4 sm:px-6 lg:px-8 -mt-20 ${isDarkMode ? 'bg-gray-800' : 'bg-gray-100'
       }`}>
       <div className="max-w-6xl mx-auto">
         <motion.div
