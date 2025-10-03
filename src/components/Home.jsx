@@ -76,7 +76,7 @@ const Home = () => {
     );
 
     const theButtonClick = () => {
-        const driveLink = 'https://drive.google.com/file/d/1SDwYm9vCKu345BDgDvx1JgNhqhkz2Bo-/view?usp=sharing';
+        const driveLink = 'https://drive.google.com/file/d/18IGzQ-WfFFhvmw_BMbK35zbUYZmAyFns/view?usp=sharing';
         window.open(driveLink, '_blank');
     };
 
@@ -189,7 +189,7 @@ const Home = () => {
                                 }`}
                         >
                             <FaFileDownload className='w-5 h-5' />
-                            Download CV
+                            CV
                         </motion.button>
 
                         <motion.button
